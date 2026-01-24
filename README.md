@@ -1,116 +1,65 @@
 # Network Automation Labs
 
-A curated portfolio of Python-based networking and security automation projects demonstrating the practical application of CompTIA Network+ and Security+ concepts through real-world operational tooling.
+> A progressive systems-literacy laboratory documenting hands-on learning in networking and security.
 
-This repository bridges **theoretical networking and security fundamentals** with **hands-on observability, fault detection, and automation engineering**.
+## Purpose
 
----
+This repository exists to support my ongoing learning in networking, security fundamentals, and Python — not to present finished tools or production systems.
 
-## 🎯 Mission
+Each folder contains small, deliberately scoped experiments designed to help me understand how networked systems behave in practice: how signals are generated, how failures appear, and how theory translates (or breaks) in real environments.
 
-To demonstrate the transition from foundational networking and security theory into **production-minded automation tools** used in real technical operations, SOC, and infrastructure environments.
+The emphasis here is on **learning through observation**, not optimization or feature completeness.
 
-Each project:
-- Solves a concrete operational problem
-- Implements protocol-aware logic (ICMP, TCP, UDP, DNS)
-- Emphasizes reliability, fault tolerance, and clean logging
-- Is **interview-ready and defensible**
+## Learning Philosophy
 
----
+- **Foundations first:** Simple experiments before abstraction or automation  
+- **Failure as signal:** Breakdowns and edge cases are part of the lesson  
+- **Growth over polish:** Understanding matters more than clean architecture  
+- **Documentation matters:** Notes capture what I learned, not just what worked  
 
-## 🛠️ Tech Stack
+This repository is expected to evolve as my understanding deepens.
 
-- **Language:** Python 3.8+
-- **Core Libraries:** `subprocess`, `time`, `datetime`, `socket`
-- **Protocols:** ICMP, TCP/IP, UDP, DNS
-- **Environment:** Windows, Linux, macOS
-- **Execution Model:** CLI-first (future-ready for Docker/VPS deployment)
+## Structure & Progression
 
----
+The labs are organized to reflect a gradual learning path:
 
-## 🚀 Portfolio Projects
+### Stage 00 — Foundations
+Basic protocol and connectivity experiments.  
+Focus: understanding ground-truth behavior before building tools.
 
-### ✅ Connectivity Monitor v1.0  
-📁 `/connectivity-monitor/`
+### Stage 01 — Observability
+Exploring how systems are monitored and how state is inferred.  
+Focus: thresholds, logging, and distinguishing noise from failure.
 
-**AUDITED & DEPLOYED** — An ICMP-based network observability tool that monitors host reachability and logs outages with intelligent state-aware detection.
+### Stage 02 — Security Primitives
+Early exploration of security-related behavior.  
+Focus: protocol handshakes, surface exposure, and safe experimentation.
 
-#### Key Features
-- **Threshold-based outage detection**  
-  Prevents false positives by logging outages only after configurable consecutive failures
-- **State-change logging**  
-  Records `OUTAGE_START` and `OUTAGE_END` events with ISO-8601 timestamps
-- **Cross-platform compatibility**  
-  Works consistently across Windows, Linux, and macOS
-- **Professional logging**  
-  Clean, parser-friendly logs (`outage_log.txt`) suitable for audits and analysis
-- **Graceful shutdown behavior**  
-  Displays an outage summary upon controlled termination
+Each stage includes notes documenting observations, confusion, and corrections.
 
-#### Technologies
-Python 3.8+, ICMP Protocol, Subprocess, File I/O, State Machine Logic
+## What This Repository Is
 
-#### Learning Objectives Demonstrated
-- Practical ICMP protocol implementation
-- Fault tolerance and false-positive reduction
-- Event-driven logging for operational visibility
-- Cross-platform scripting best practices
-- Defensive error handling and user experience design
+- A learning laboratory  
+- A record of technical growth over time  
+- A place to practice thinking about systems carefully  
 
-🔗 [View Code](./connectivity-monitor/connectivity_monitor.py)  
-📄 [View Documentation](./connectivity-monitor/README.md)
+## What This Repository Is Not
 
----
+- A production-ready toolset  
+- A cybersecurity operations repository  
+- A showcase of advanced engineering  
+- A finished or static portfolio  
 
-## 📂 Project Status
+## Context
 
-### Active Development
-1. **Port Scanner Lite** *(Security Logic)* — *In Development*
-   - CLI-based TCP port scanner (ports 22, 80, 443)
-   - Demonstrates TCP handshake fundamentals and safe scanning practices
+This work supports my broader interest in evaluating technical systems by building first-principles understanding. Learning how infrastructure behaves helps me reason more clearly about reliability, failure modes, and trust in higher-level systems.
 
-2. **DNS Lookup Tool** *(Network Resolution)* — *Planned*
-   - Batch DNS resolution utility for domain lists
-   - Focus on UDP/DNS behavior, timeouts, and exception handling
+## Status
 
-### Completed Projects
-- **✅ Connectivity Monitor** — **v1.0 (Audited & Deployed)**
+Active learning in progress.  
+Structure, content, and depth will change as understanding improves.
 
 ---
 
-## 🎓 CompTIA Objective Mapping
-
-**Network+**
-- ICMP fundamentals
-- Network troubleshooting methodologies
-- TCP/IP and DNS concepts
-
-**Security+**
-- Availability and resilience
-- Operational monitoring
-- Secure scripting practices
-- Signal vs noise awareness in detection systems
-
----
-
-## 👨‍💻 Author
-
-**Reuben Empere**  
-*Entry-Level Technical Operations & Security Automation Professional*  
-CompTIA Security+ | CompTIA Network+
-
-📍 Lekki, Lagos, Nigeria (UTC+1)  
-📧 rb.empere@gmail.com  
-📱 +234 810 863 2175  
-🔗 [LinkedIn](https://linkedin.com/in/reuben-empere-0173493a4)  
-💻 [GitHub](https://github.com/empere-tech)
-
----
-
-## 🧠 Learning Philosophy
-
-This portfolio emphasizes **applied understanding over theory memorization**.
-
-> *“Theory without practice is sterile; practice without theory is blind.”*  
-> — Adapted from Immanuel Kant
-
+Maintainer: Reuben Empere  
+Location: Lagos, Nigeria (UTC+1)
